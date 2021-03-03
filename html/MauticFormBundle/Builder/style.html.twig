@@ -1,0 +1,116 @@
+<style type="text/css" scoped>
+    .mauticform_wrapper { 
+        max-width: 600px;
+        margin: 10px auto; 
+        font-family: 'Open Sans', 'sans-serif' !important; 
+        color: #46617d;
+    }
+    .mauticform-innerform {}
+    .mauticform-post-success {}
+    .mauticform-name { 
+        font-weight: normal; 
+        font-size: 1.5em; 
+        margin-bottom: 3px; 
+    }
+    .mauticform-description { 
+        margin-top: 2px; 
+        margin-bottom: 10px; 
+    }
+    .mauticform-error { 
+        margin-bottom: 10px; 
+        color: red; 
+    }
+    .mauticform-message { 
+        margin-bottom: 10px;
+        color: #51D88B; 
+    }
+    .mauticform-row { 
+        display: block; 
+        margin-bottom: 20px; 
+    }
+    .mauticform-label { 
+        font-size: 16px; 
+        display: block; 
+        font-weight: normal; 
+        margin-bottom: 5px; 
+    }
+    .mauticform-row.mauticform-required .mauticform-label:after { 
+        color: #e32;
+        content: " *"; 
+        display: inline; 
+    }
+    .mauticform-helpmessage { 
+        display: block; 
+        font-size: 0.9em; 
+        margin-bottom: 3px; 
+    }
+    .mauticform-errormsg { 
+        display: block; 
+        color: red; 
+        margin-top: 2px; 
+    }
+    
+    {# Grande gambiarra para sobrepor o style do tema wordpress #}
+    .mauticform-selectbox, 
+    .mauticform-input, 
+    .mauticform-textarea { 
+        width: 100% !important; 
+        padding: 0.5em 0.5em !important; 
+        border: 1px solid #8ee6b3 !important; 
+        background: #fff !important; 
+        box-shadow: 0px 0px 0px #fff inset !important; 
+        box-sizing: border-box !important; 
+        border-radius: 5px !important;
+    }
+
+    {# Removendo o focus #}
+    textarea:focus, input:focus, select:focus {
+       box-shadow: 0 0 0 0;
+       border: 0 none;
+       outline: 0;
+    } 
+
+    .mauticform-checkboxgrp-row {}
+    .mauticform-checkboxgrp-label { 
+        font-weight: normal; 
+    }
+    .mauticform-checkboxgrp-checkbox {}
+    .mauticform-radiogrp-row {}
+    .mauticform-radiogrp-label { 
+        font-weight: normal; 
+    }
+    .mauticform-radiogrp-radio {}
+    .mauticform-button-wrapper .mauticform-button.btn-default { 
+        color: #fff;
+        background-color: #51D88B;
+        border-color: #4dbfbf;
+        transition: .3s;
+    }
+
+    .mauticform-button-wrapper .mauticform-button:hover {
+        background-color: #00BE9C;
+    }
+
+
+    .mauticform-button-wrapper .mauticform-button {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 600;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        padding: 8px 16px;
+        font-size: 18px;
+        line-height: 1.3856;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .mauticform-button-wrapper .mauticform-button.btn-default[disabled] { 
+        background-color: #51D88B; border-color: #dddddd;
+    }
+</style>
